@@ -6,7 +6,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import WorkIcon from "@mui/icons-material/Work";
 import ContactsIcon from "@mui/icons-material/Contacts";
 import DocumentScannerIcon from "@mui/icons-material/DocumentScanner";
-function Navbar() {
+function Navbar({ scrollToWorks }) {
   return (
     <div className="navbar">
       <div className="page-nav-container">
@@ -17,13 +17,13 @@ function Navbar() {
           />
         </div>
         <div className="middle__icons">
-          <div className="home">
+          <div className="home" onClick={() => scrollToWorks("about")}>
             <p>About</p>
             <div className="home__icon">
               <HomeIcon />
             </div>
           </div>
-          <div className="home">
+          <div className="home" onClick={() => scrollToWorks("projects")}>
             <p>Projects</p>
             <div className="project__icon">
               <WorkIcon />
