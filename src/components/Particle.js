@@ -12,8 +12,19 @@ function Particle() {
     console.log(container);
   };
   return (
-    <div style={{ position: "fixed", zIndex: -1 }}>
+    <div
+      style={{
+        position: "absolute",
+        zIndex: -1,
+        top: 0,
+        height: "100vh",
+        width: "100vw",
+        // overflow: "hidden",
+        // border: "12px solid black",
+      }}
+    >
       <Particles
+        style={{ height: "100vh" }}
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}

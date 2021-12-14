@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Typist from "react-typist";
+import Particle from "../Particle";
+
 import "./about.css";
 
 function About() {
@@ -11,10 +13,11 @@ function About() {
     }, 3000);
   }, []);
   return (
-    <div>
+    <div style={{ position: "relative", width: "100vw", height: "100vh" }}>
       <div className="main">
         <div style={{ opacity: opacity }} className="image-div">
           <img
+            className="headshot_about"
             src="https://www.linkpicture.com/q/IMG_21D74AF90805-1.jpeg"
             alt=""
           />
@@ -27,16 +30,16 @@ function About() {
           </p>
           <p className="second-sentence">
             A Full-Stack Web Developer who would love to make this world a
-            better place to live for all of us and next generations. AND ALSO TO
-            MAKE SO MUCH MONEY oOps... SORRY!
+            better place to live for all living creatures. I have ...
           </p>
-          <Typist.Backspace count={46} delay={200} />
+          <Typist.Backspace count={11} delay={200} />
           <p className="third-sentence">
             I have a strong passion for web development and design which
             influences my professional work, as well as my side projects.
           </p>
         </Typist>
       </div>
+      {/* <Particle /> */}
     </div>
   );
 }

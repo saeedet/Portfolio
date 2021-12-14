@@ -25,7 +25,7 @@
   min-height: 100vh;
   padding: 0 20px;
 }
-img {
+.headshot_about {
   border-radius: 9.5rem;
   width: 300px;
 }
