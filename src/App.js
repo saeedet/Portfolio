@@ -10,16 +10,22 @@ function App() {
 
   const scrollToWorks = (view) => {
     switch (view) {
+
+
       case "projects":
         projectsRef.current.scrollIntoView({
           behavior: "smooth",
         });
         break;
+
+
       case "about":
         aboutRef.current.scrollIntoView({
           behavior: "smooth",
         });
         break;
+
+        
       default:
         return;
     }
